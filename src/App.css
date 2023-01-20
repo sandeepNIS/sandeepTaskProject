@@ -6,7 +6,18 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+/* .table{
+  display: block !important;
+  overflow-x: auto !important;
+  width: 100% !important;
+} */
+/* table.bodywrapcenter>tr>td {
+  width: 100%;
+  float: left;
+} */
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td{
+  padding: 1px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

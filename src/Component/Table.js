@@ -2,7 +2,7 @@
 import React,{useState,useMemo} from 'react';
   import { Table } from "react-bootstrap";
 import Example from "./Modal";
-import Pagination from '../pagination';
+import Pagination from './pagination';
   import JsonData from 'c:/project/my-project/src/list.json'
 
   let PageSize = 10;
@@ -35,9 +35,11 @@ import Pagination from '../pagination';
         // )
     return (
     <div>
-      <div  className="table-wrapper table-responsive table-responsive{-sm|-md|-lg|-xl}   overflow-x:auto;" >
+      <div  className="table-wrapper  table-responsive{-sm|-md|-lg|-xl}overflow-x:auto;  " >
 		{/* //table-responsive size="sm" */}
-	<Table className="table"  hover table responsive size="sm" w-auto >
+        {/*table-wrapper  table-responsive{-sm|-md|-lg|-xl}overflow-x:auto;  */}
+        
+	<Table className="table table-sm table-condensed"  hover table responsive  table-wrapper w-auto>
           <thead>
             <tr>
             <th><input type="checkbox"/></th>
@@ -70,6 +72,7 @@ import Pagination from '../pagination';
           </tbody>
        </Table>
        </div>
+    
        <Pagination
         className="pagination-bar"
         currentPage={currentPage}

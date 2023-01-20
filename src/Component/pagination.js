@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 // import { usePagination, DOTS } from './Component/usePagination.txt';
 import { usePagination, DOTS } from './usePagination';
-import './pagination.scss';
+import '../pagination.scss';
 const Pagination = props => {
   const {
     onPageChange,
@@ -38,7 +38,7 @@ const Pagination = props => {
       className={classnames('pagination-container', { [className]: className })}
     >
       <button type="button" class="btn btn-danger">Delete Selected</button>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      &emsp;
 
       <li
         className={classnames('pagination-item', {
